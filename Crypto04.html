@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>test de api</title>
+</head>
+
+<body>
+   
+
+
+    <div class="container my-5 text-center">
+        <p><img src="https://assets.coingecko.com/coins/images/9761/large/kava.png?1663638871" width=50px></p>
+              <!-- Muestra logo de la crypto correspondiente en tamaño controlado. -->
+        <button class="btn btn-warning w-10" onclick="traer()">Obtener datos Kava</button>
+              <!-- Botón para solicitar info de la Crypto correspondiente.
+                   Los datos se actualizan al hacer click según esté actualizada la página a ese momento. -->
+        <div class="mt-5" id="contenido">
+              <!-- Aqui se colocará la info una vez se solicite via botón. -->
+        </div>
+    </div>
+
+    <script>
+        var contenido = document.querySelector('#contenido');
+
+        function traer() {
+            fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=ars&ids=kava&sparkline=false&locale=es')
+                  <!-- Solicitamos info solo de la Crypto correspndiente, en AR$ y en castellano. -->
+               .then(res => res.json())
+               .then(data => 
+                    {
+                    console.log(data)
+                          <!-- Quedan en consola todos los datos obtenidos de la Crypto. -->
+                    console.log(data[0].name)
+                    contenido.innerHTML = /*html*/
+                      `
+                      <p>Nombre de la moneda: ${data[0].name}</p>
+                      <p>Precio en pesos argentinos: $ ${data[0].current_price}</p>
+                      <p>Precio mínimo en las últimas 24hs: $ ${data[0].low_24h}</p>
+                      <p>Precio máximo en las últimas 24hs: $ ${data[0].high_24h}</p>
+                      <p>Actualizado a fecha y hora (GMT0): ${data[0].last_updated}</p>
+                      `
+                    })
+        }
+    </script>
+</body>
+
+</html>
