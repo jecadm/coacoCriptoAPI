@@ -143,7 +143,12 @@ html {
     padding: 1rem;
     text-align: center;
   }
-  
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
   /* Estilos de los puntos de corte para dispositivos móviles */
   
   @media (max-width: 768px) {
@@ -244,10 +249,17 @@ color: #1c1c1c;
 
 /* Estilos adicionales */
 
+.infocrypto {
+background-image: url("background-delaunay.jpg");
+background-size: cover;
+background-position: center center;
+}
+
 .container {
 max-width: 1200px;
 margin: 0 auto;
 padding: 0 2rem;
+color: #ffffff;
 }
 
 .section-heading {
@@ -292,3 +304,91 @@ color: #fff;
 background-color: #17a2b8;
 color: #fff;
 }
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para la sección hero */
+.hero {
+  background-image: url("background-graphene.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text a {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+/* Estilos para la sección criptomonedas */
+.cryptos {
+  padding: 2rem;
+}
+
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+}
+
+.crypto-box {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  text-align: center;
+}
+
+.crypto-box i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.crypto-box h3 {
+  font-size: 1.5rem;
+}
+
+/* Estilos para la sección sobre nosotros */
+.about {
+  padding: 2rem;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.5;}
+
+
+
+  
+
+  
