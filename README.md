@@ -8,15 +8,9 @@ HTML, CSS y Javascript
 | Nombre | Apellido | DNI | E-mail | 
 | ------------ | ------------ | ------------ | ------------ | 
 | Jerónimo | Costa | *****705 | je********@gmail.com |
-Roberto Luccas
-   DNI: *****297
-   e-mail: r.*********@gmail.com
-Leonel Días
-   DNI: *****291
-   e-mail: es***********@gmail.com
-Adriana Rojas
-   DNI: *****
-   e-mail: ad***********@gmail.com
+| Roberto | Luccas|*****297 |  r.*********@gmail.com | 
+| Leonel|  Días |  *****291 |  es***********@gmail.com | 
+| Adriana|  Rojas |  ***** | ad***********@gmail.com | 
 
 
 ************************
