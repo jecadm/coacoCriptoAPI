@@ -3,12 +3,10 @@ Codo a Codo - Comisión 23031
 TPO Desarrollo Web
 HTML, CSS y Javascript
 
-Integrantes:
+| Integrantes: |
 ------------
-
-Jerónimo Costa
-   DNI: *****705
-   e-mail: je********@gmail.com
+| Nombre | Apellido | DNI | E-mail | 
+| Jerónimo | Costa | *****705 | je********@gmail.com |
 Roberto Luccas
    DNI: *****297
    e-mail: r.*********@gmail.com
