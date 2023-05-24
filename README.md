@@ -6,6 +6,7 @@ HTML, CSS y Javascript
 | Integrantes: |
 ------------
 | Nombre | Apellido | DNI | E-mail | 
+| ------------ | ------------ | ------------ | ------------ | 
 | Jerónimo | Costa | *****705 | je********@gmail.com |
 Roberto Luccas
    DNI: *****297
