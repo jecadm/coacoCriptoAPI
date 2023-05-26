@@ -1,15 +1,17 @@
-const form = document.querySelector('form');
+const form = document.getElementById('miFormulario');
 form.addEventListener('submit', (event) => {
   event.preventDefault(); // Evita que el formulario se envíe automáticamente
-  const url = 'https://ejemplo.com/notificacion';
+  const url = 'https://formspree.io/f/xrgjknok';
   const formData = new FormData(form);
   fetch(url, {
     method: 'POST',
-    body: formData
+    body: formData,
+    mode: 'no-cors'
   })
   .then(response => {
     if (response.ok) {
       console.log('Notificación enviada exitosamente');
+     
     } else {
       console.error('Ocurrió un error al enviar la notificación');
     }
@@ -17,4 +19,4 @@ form.addEventListener('submit', (event) => {
   .catch(error => {
     console.error('Ocurrió un error al enviar la notificación:', error);
   });
-});
+}); 

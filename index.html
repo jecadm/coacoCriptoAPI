@@ -5,38 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- favicon -->
-  <link rel="icon" type="image/jpg" href="./img/favicon2.png"/>
-   <!-- favicon -->
-   <!-- Boostrap5 -->
+  <link rel="icon" type="image" href="./img/favicon2.png" />
+  <!-- favicon -->
+  <!-- Boostrap5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<!-- Boostrap5 -->
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Boostrap5 -->
+  <!-- NAVbar JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Mi sitio web de criptomonedas</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-N+k5ztvgEKIzXyyo5SPY5tnt+c7AsqIwUjolTY/Rg7mULo+eMw7ZUvxpq/gYz+8uJL5lCsh0GfCe7l7Bf4y3GA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <link rel="icon" href="data:image/x-icon;base64">
 </head>
 
 <body>
   <header>
     <nav>
-      <ul>
+      <div class="topnav" id="navbar">
+        <a href="#Inicio">Inicio</a>
+        <a href="#Cripto1">BTC <i class="fa-brands fa-bitcoin"></i></a>
+        <a href="#Cripto2">ETH <i class="fa-brands fa-ethereum"></i></a>
+        <a href="#Cripto3">LTC <i class="fa-solid fa-litecoin-sign"></i></a>
+        <a href="#Cripto4">KAV <i class="fa-solid fa-coins"></i></a>
+        <a href="#Contacto">Contacto <i class="fa-regular fa-envelope"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+     <!--  <ul>
         <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Cripto1">Criptomoneda 1</a></li>
-        <li><a href="#Cripto2">Criptomoneda 2</a></li>
-        <li><a href="#Cripto3">Criptomoneda 3</a></li>
-        <li><a href="#Cripto4">Criptomoneda 4</a></li>
-        <li><a href="#Contacto">Contacto</a></li>
-      </ul>
+        <li><a href="#Cripto1">BTC <i class="fa-brands fa-bitcoin"></i></a></li>
+        <li><a href="#Cripto2">ETH <i class="fa-brands fa-ethereum"></i></a></li>
+        <li><a href="#Cripto3">LTC <i class="fa-solid fa-litecoin-sign"></i></a></li>
+        <li><a href="#Cripto4">KAV <i class="fa-solid fa-coins"></i></a></li>
+        <li><a href="#Contacto">Contacto <i class="fa-regular fa-envelope"></i></a></li>
+      </ul> -->
     </nav>
   </header>
   <main>
-    <section class="hero">
+    <section id="Inicio" class="hero">
       <div class="hero-text">
-        <h1 id="Inicio">Mi sitio web de criptomonedas</h1>
+        <h1>Mi sitio web de criptomonedas</h1>
         <p>Descubre el valor en tiempo real de las criptomonedas más populares del mercado.</p>
         <a href="https://google.com">Más información</a>
       </div>
@@ -44,45 +55,63 @@
     <section class="cryptos">
       <h2>Criptomonedas</h2>
       <div class="crypto-grid">
-        <a href="crypto-Bitcoin.html">
+        <a id="Cripto1" href="crypto-Bitcoin.html">
           <div class="crypto-box">
-            <i class="fab fa-bitcoin"></i>
-            <h3 id="Cripto1">Bitcoin</h3>
+            <i class="fa-brands fa-bitcoin"></i>
+            <h3>Bitcoin</h3>
           </div>
         </a>
-        <a href="crypto-Ethereum.html">
+        <a id="Cripto2" href="crypto-Ethereum.html">
           <div class="crypto-box">
-            <i class="fab fa-ethereum"></i>
-            <h3 id="Cripto2">Ethereum</h3>
+            <i class="fa-brands fa-ethereum"></i>
+            <h3>Ethereum</h3>
           </div>
         </a>
-        <a href="crypto-Litecoin.html">
+        <a id="Cripto3" href="crypto-Litecoin.html">
           <div class="crypto-box">
-            <i class="fab fa-litecoin"></i>
-            <h3 id="Cripto3">Litecoin</h3>
+            <i class="fa-solid fa-litecoin-sign"></i>
+            <h3>Litecoin</h3>
           </div>
         </a>
-        <a href="crypto-Kava.html">
+        <a name="Cripto4" href="crypto-Kava.html">
           <div class="crypto-box">
-            <i class="fab fa-bitcoin-cash"></i>
-            <h3 id="Cripto4">Kava</h3>
+            <i class="fa-solid fa-coins"></i>
+            <h3>Kava</h3>
           </div>
         </a>
       </div>
     </section>
     <section class="about">
-      <h2>Sobre nosotros</h2>
-      <p>Somos un equipo de expertos en criptomonedas con una amplia experiencia en el mercado. Nuestro objetivo es
+      <h2>Quienes somos</h2>
+      <p>Somos un equipo serio y responsable con una amplia experiencia en el mercado de Criptomonedas. Nuestro objetivo
+        es
         proporcionar información precisa y actualizada sobre las criptomonedas más populares del momento.</p>
     </section>
-   <!-- CONTACTO-->
-  <section data-aos="fade-up" class="container">
-    <section class=" container formconsulta centrar ">
+
+    <section class="infoubicacion">
       <section>
-        <h2 id="Contacto">CONTACTO</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1366.0794053842992!2d-58.41004698782615!3d-34.57801399137136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1684938922546!5m2!1sen!2sar"
+            allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="description">
+          <p> <em>
+              <h6>Encontranos aquí</h6>
+            </em> </p>
+        </div>
       </section>
-      <section>
-        <form action="https://formspree.io/f/mwkyeeao" method="post" class="">
+
+      <!-- CONTACTO-->
+      <section data-aos="fade-up" class="container">
+        <section class=" container formconsulta centrar ">
+          <section>
+            <h2 id="Contacto">CONTACTO</h2>
+          </section>
+          <section>
+            <form id="miFormulario" method="post" class="">
           <section class="formconsulta center">
             <section class="form-row ">
               <section class="col-sl-10 mb-3  ">
@@ -135,17 +164,24 @@
                 </section>
               </section>
             </section>
-        </form>
+          </section>
+        </form> 
+     
+          </section>
+        </section>
       </section>
+      <!-- CONTACTO-->
     </section>
-  </section>
-  <!-- CONTACTO-->
-</main>
- 
+  </main>
+
   <footer>
     <p>Derechos de autor © 2023 Mi sitio web de criptomonedas</p>
   </footer>
   <script src="./form.js"></script>
+<<<<<<< HEAD
+=======
+  <script src="./navbar.js"></script>
+>>>>>>> slave2
 </body>
 
 </html>
