@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" type="image/jpg" href="./img/favicon2.png"/>
+   <!-- favicon -->
+   <!-- Boostrap5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- Boostrap5 -->
+
+  <title>Mi sitio web de criptomonedas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <link rel="icon" href="data:image/x-icon;base64">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Cripto1">Criptomoneda <i class="fa-brands fa-bitcoin"></i></a></li>
+        <li><a href="#Cripto2">Criptomoneda <i class="fa-brands fa-ethereum"></i></a></li>
+        <li><a href="#Cripto3">Criptomoneda <i class="fa-solid fa-litecoin-sign"></i></a></li>
+        <li><a href="#Cripto4">Criptomoneda <i class="fa-solid fa-coins"></i></a></li>
+        <li><a href="#Contacto">Contacto <i class="fa-regular fa-envelope"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="Inicio" class="hero">
+      <div class="hero-text">
+        <h1>Mi sitio web de criptomonedas</h1>
+        <p>Descubre el valor en tiempo real de las criptomonedas más populares del mercado.</p>
+        <a href="#Contacto">Más información</a>
+      </div>
+    </section>
+    <section class="cryptos">
+      <h2>Criptomonedas</h2>
+      <div class="crypto-grid">
+        <a id="Cripto1" href="crypto-Bitcoin.html">
+          <div class="crypto-box">
+            <i class="fa-brands fa-bitcoin"></i>
+            <h3>Bitcoin</h3>
+          </div>
+        </a>
+        <a id="Cripto2" href="crypto-Ethereum.html">
+          <div class="crypto-box">
+            <i class="fa-brands fa-ethereum"></i>
+            <h3>Ethereum</h3>
+          </div>
+        </a>
+        <a id="Cripto3" href="crypto-Litecoin.html">
+          <div class="crypto-box">
+            <i class="fa-solid fa-litecoin-sign"></i>
+            <h3>Litecoin</h3>
+          </div>
+        </a>
+        <a name="Cripto4" href="crypto-Kava.html">
+          <div class="crypto-box">
+            <i class="fa-solid fa-coins"></i>
+            <h3>Kava</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="about">
+      <h2>Quienes somos</h2>
+      <p>Somos un equipo serio y responsable con una amplia experiencia en el mercado de Criptomonedas. Nuestro objetivo es
+        proporcionar información precisa y actualizada sobre las criptomonedas más populares del momento.</p>
+    </section>
+
+<section class="infoubicacion">
+    <section>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1366.0794053842992!2d-58.41004698782615!3d-34.57801399137136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1684938922546!5m2!1sen!2sar" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+  
+      <div class="description">
+        <p> <em> <h6>Encontranos aquí</h6> </em> </p>
+      </div>
+    </section>
+
+   <!-- CONTACTO-->
+  <section data-aos="fade-up" class="container">
+    <section class=" container formconsulta centrar ">
+      <section>
+        <h2 id="Contacto">CONTACTO</h2>
+      </section>
+      <section>
+        <form action="https://formspree.io/f/mlekknpn" method="post" class="">
+          <section class="formconsulta center">
+            <section class="form-row ">
+              <section class="col-sl-10 mb-3  ">
+                <label for="idNombre">Nombre</label>
+                <section>
+                  <input name="Nombre" type="text" class="form-control is-valid centrar" id="idNombre" value=""
+                    required="" placeholder="Ingrese aquí su nombre">
+                </section>
+                <section class="valid-feedback"> </section>
+                <section class="col-sl-4 mb-3 ">
+                  <label for="idCorreo">e-mail</label>
+                  <section class="input-group">
+                    <section class="input-group-prepend">
+                      <span class="input-group-text" id="idCorreo">@</span>
+                    </section>
+                    <input name="Email" type="email" class="form-control is-valid centrar" id="idCorreo" value=""
+                      required="" placeholder="Ingrese aquí su correo">
+                    <section class="valid-feedback">
+                    </section>
+                  </section>
+                </section>
+                <section class="col-sl-4 mb-3 ">
+                  <label for="idTelefono">Teléfono</label>
+                  <input name="tnumber" type="number" class="form-control is-valid centrar" id="idTelefono" required=""
+                    value="" placeholder="Ingrese aquí su teléfono">
+                  <section class="valid-feedback">
+                  </section>
+                </section>
+                <section>
+                  <section class="col-sl-4 mb-3 ">
+                    <label for="exampleFormControlTextarea1"> Consulta</label>
+                    <input name="TxConsulta" type="textarea" class="form-control" id="exampleFormControlTextarea1"
+                      rows="3">
+                  </section>
+                </section>
+                <section class="col-sl-4 mb-3 ">
+                  <section class="form-check">
+                    <input name="check" class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                      required="">
+                    <label class="form-check-label" for="invalidCheck3">
+                      <p>Acepto enviar mi información para que me contacten.</p>
+                    </label>
+                    <section class="invalid-feedback">
+                      <p> Debes estar de acuerdo antes de enviar. </p>
+                    </section>
+                  </section>
+                </section>
+                <section>
+                  <button class="btn btn-primary textC1 btn-dark " type="submit">Enviar</button>
+                </section>
+              </section>
+            </section>
+          </section>
+        </form>
+      </section>
+    </section>
+  </section>
+  <!-- CONTACTO-->
+</section>
+</main>
+ 
+  <footer>
+    <p>Derechos de autor © 2023 Mi sitio web de criptomonedas</p>
+  </footer>
+  <script src="./form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" type="image/jpg" href="./img/favicon2.png"/>
+   <!-- favicon -->
+   <!-- Boostrap5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- Boostrap5 -->
+
+  <title>Crypto Ethereum</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-N+k5ztvgEKIzXyyo5SPY5tnt+c7AsqIwUjolTY/Rg7mULo+eMw7ZUvxpq/gYz+8uJL5lCsh0GfCe7l7Bf4y3GA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+
+<body class="infocrypto">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#Cripto1">Criptomoneda <i class="fa-brands fa-bitcoin"></i></a></li>
+        <li><a href="index.html#Cripto2">Criptomoneda <i class="fa-brands fa-ethereum"></i></a></li>
+        <li><a href="index.html#Cripto3">Criptomoneda <i class="fa-solid fa-litecoin-sign"></i></a></li>
+        <li><a href="index.html#Cripto4">Criptomoneda <i class="fa-solid fa-coins"></i></a></li>
+        <li><a href="index.html#Contacto">Contacto <i class="fa-regular fa-envelope"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="container my-5 text-center">
+        <p><img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880" width=50px></p>
+              <!-- Muestra logo de la crypto correspondiente en tamaño controlado. -->
+        <button class="btn btn-warning w-10" onclick="traer()">Obtener datos Ethereum</button>
+              <!-- Botón para solicitar info de la Crypto correspondiente. -->
+              <!-- Los datos se actualizan al hacer click según esté actualizada la página a ese momento. -->
+        <section class="datosdeapirest">
+            <div class="mt-5" id="contenido">
+                  <!-- Aqui se colocará la info una vez se solicite via botón. -->
+            </div>
+        </section>
+    </div>
+  </section>
+    <script>
+        var contenido = document.querySelector('#contenido');
+
+        function traer() {
+            fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=ars&ids=ethereum&sparkline=false&locale=es')
+                  <!-- Solicitamos info solo de la Crypto correspndiente, en AR$ y en castellano. -->
+                  <!-- Usamos CoinGecko API V3 de https://www.coigecko.com -->
+               .then(res => res.json())
+               .then(data => 
+                    {
+                    console.log(data)
+                          <!-- Quedan en consola todos los datos obtenidos de la Crypto. -->
+                    console.log(data[0].name)
+                    contenido.innerHTML = /*html*/
+                      `
+                      <p>Nombre de la moneda: ${data[0].name}</p>
+                      <p>Precio en pesos argentinos: $ ${data[0].current_price}</p>
+                      <p>Precio mínimo en las últimas 24hs: $ ${data[0].low_24h}</p>
+                      <p>Precio máximo en las últimas 24hs: $ ${data[0].high_24h}</p>
+                      <p>Actualizado a fecha y hora (GMT0): ${data[0].last_updated}</p>
+                      `
+                    })
+        }
+    </script>
+</body>
+
+</html>
