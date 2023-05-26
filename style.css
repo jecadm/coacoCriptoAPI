@@ -134,6 +134,25 @@ html {
   .about p {
     font-size: 1.25rem;
   }
+
+  /* Estilos del mapa en la sección "Sobre nosotros" */
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    iframe {
+      width: 400px;
+      height: 300px;
+    }
+
+    .description {
+      text-align: center;
+      margin-top: 20px;
+    }
+
   
   /* Estilos del pie de página */
   
@@ -219,7 +238,7 @@ transform: rotate(360deg);
 }
 
 .crypto-box:hover h3 {
-color: #1c1c1c;
+color: #1122cc;
 }
 
 /* Estilos de Bootstrap para la página de contacto */
@@ -255,11 +274,21 @@ background-size: cover;
 background-position: center center;
 }
 
+.infoubicacion {
+background-image: url("background-pseudofractal.jpg");
+background-size: cover;
+background-position: center center;
+color: #ffffff
+}
+
+.datosdeapirest {
+color: #ffffff
+}
+
 .container {
 max-width: 1200px;
 margin: 0 auto;
 padding: 0 2rem;
-color: #ffffff;
 }
 
 .section-heading {
