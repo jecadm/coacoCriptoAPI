@@ -11,7 +11,7 @@ form.addEventListener('submit', (event) => {
   .then(response => {
     if (response.ok) {
       console.log('Notificación enviada exitosamente');
-      form.reset(); // Limpia los campos del formulario
+     
     } else {
       console.error('Ocurrió un error al enviar la notificación');
     }
