@@ -3,6 +3,18 @@ Codo a Codo - Comisión 23031
 TPO Desarrollo Web
 HTML, CSS y Javascript
 
+<<<<<<< HEAD
+=======
+| Integrantes: |
+------------
+| Nombre | Apellido | DNI | E-mail | 
+| ------------ | ------------ | ------------ | ------------ | 
+| Jerónimo | Costa | *****705 | je********@gmail.com |
+| Roberto | Luccas|*****297 |  r.*********@gmail.com | 
+| Leonel|  Días |  *****291 |  es***********@gmail.com | 
+| Adriana|  Rojas |  ***** | ad***********@gmail.com | 
+
+>>>>>>> 3b853329fa9e1e322ccb8585ac2ff21ca2cd123e
 
 ************************
 ***  CoACoCriptoAPI  ***
