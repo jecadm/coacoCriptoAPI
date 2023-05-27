@@ -485,4 +485,13 @@ body {
     text-align: left;
   }
 }
->>>>>>> slave2
+/* SEPARADOR */
+
+.separador {
+
+  background-color: #cfcfcf;
+  width: auto;
+  text-align: center;
+  text-transform: capitalize;
+
+}
