@@ -21,12 +21,12 @@ form.addEventListener('submit', (event) => {
   .catch(error => {
     console.error('Ocurrió un error al enviar la notificación:', error);
   });
+  const mensaje = document.getElementById('mensaje');
+  
+  
+   // Mostramos el mensaje de notificación
+    const notificacion = document.createElement('p');
+    notificacion.textContent = 'El formulario se ha enviado correctamente Gracias por contactarnos';
+    mensaje.appendChild(notificacion);
 }); 
-const mensaje = document.getElementById('mensaje');
-
-
- // Mostramos el mensaje de notificación
-  const notificacion = document.createElement('p');
-  notificacion.textContent = 'El formulario se ha enviado correctamente';
-  mensaje.appendChild(notificacion);
 
