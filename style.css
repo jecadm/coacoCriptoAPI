@@ -1,8 +1,6 @@
 /* Estilos globales */
 
-:root {
-  --color-fondos: #1c1c1c;
-}
+
 
 html {
     font-size: 16px;
@@ -22,7 +20,7 @@ html {
   /* Estilos del encabezado */
   
   header {
-    background-color: var(--color-fondos);
+    background-color: #1c1c1c;
     color: #fff;
     padding: 1rem;
   }
@@ -75,7 +73,7 @@ html {
   .hero-text a {
     display: inline-block;
     background-color: #fff;
-    color: var(--color-fondos);
+    color: #1c1c1c;
     padding: 1rem 2rem;
     border-radius: 2rem;
     transition: all 0.3s ease;
