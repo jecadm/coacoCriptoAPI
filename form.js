@@ -1,5 +1,4 @@
 const form = document.getElementById('formulario');
-// Evita que el formulario se envíe automáticamente
 
 form.addEventListener('submit', (event) => {
   event.preventDefault(); // Evita que el formulario se envíe automáticamente
