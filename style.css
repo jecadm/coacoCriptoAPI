@@ -346,11 +346,11 @@ body {
 
 /* Estilos para la sección hero */
 .hero {
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
   background-image: url('https://example.com/background.jpg');
-=======
+/* ======= */
   background-image: url("background-graphene.jpg");
->>>>>>> slave2
+/* >>>>>>> slave2 */
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -388,11 +388,11 @@ body {
 
 .crypto-grid {
   display: grid;
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-=======
+/* ======= */
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
->>>>>>> slave2
+/* >>>>>>> slave2 */
   gap: 2rem;
 }
 
@@ -424,9 +424,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.5;}
 
-<<<<<<< HEAD
-  
-=======
+/* <<<<<<< HEAD ======= */
 /* NAVbar js*/
 
 .topnav {
