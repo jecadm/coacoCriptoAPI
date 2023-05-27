@@ -54,12 +54,12 @@
         function traer() {
             fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=ars&ids=ethereum&sparkline=false&locale=es')
                   <!-- Solicitamos info solo de la Crypto correspndiente, en AR$ y en castellano. -->
-                  <!-- Usamos CoinGecko API V3 de https://www.coigecko.com -->
+                  // Usamos CoinGecko API V3 de https://www.coigecko.com
                .then(res => res.json())
                .then(data => 
                     {
                     console.log(data)
-                          <!-- Quedan en consola todos los datos obtenidos de la Crypto. -->
+                         // Quedan en consola todos los datos obtenidos de la Crypto. -->
                     console.log(data[0].name)
                     contenido.innerHTML = /*html*/
                       `
