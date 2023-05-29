@@ -1,4 +1,5 @@
-const form = document.getElementById('miFormulario');
+const form = document.getElementById('formulario');
+
 form.addEventListener('submit', (event) => {
   event.preventDefault(); // Evita que el formulario se envíe automáticamente
   const url = 'https://formspree.io/f/xrgjknok';
@@ -19,4 +20,12 @@ form.addEventListener('submit', (event) => {
   .catch(error => {
     console.error('Ocurrió un error al enviar la notificación:', error);
   });
+  const mensaje = document.getElementById('mensaje');
+  
+  
+   // Mostramos el mensaje de notificación
+    const notificacion = document.createElement('p');
+    notificacion.textContent = 'El formulario se ha enviado correctamente Gracias por contactarnos';
+    mensaje.appendChild(notificacion);
 }); 
+

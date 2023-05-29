@@ -24,14 +24,25 @@
 <body class="infocrypto">
   <header>
     <nav>
-      <ul>
+      <div class="topnav" id="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#Cripto1">BTC <i class="fa-brands fa-bitcoin"></i></a>
+        <a href="index.html#Cripto2">ETH <i class="fa-brands fa-ethereum"></i></a>
+        <a href="index.html#Cripto3">LTC <i class="fa-solid fa-litecoin-sign"></i></a>
+        <a href="index.html#Cripto4">KAV <i class="fa-solid fa-coins"></i></a>
+        <a href="index.html#Contacto">Contacto <i class="fa-regular fa-envelope"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+<!--      <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="index.html#Cripto1">Criptomoneda <i class="fa-brands fa-bitcoin"></i></a></li>
         <li><a href="index.html#Cripto2">Criptomoneda <i class="fa-brands fa-ethereum"></i></a></li>
         <li><a href="index.html#Cripto3">Criptomoneda <i class="fa-solid fa-litecoin-sign"></i></a></li>
         <li><a href="index.html#Cripto4">Criptomoneda <i class="fa-solid fa-coins"></i></a></li>
         <li><a href="index.html#Contacto">Contacto <i class="fa-regular fa-envelope"></i></a></li>
-      </ul>
+      </ul> -->
     </nav>
   </header>
   <section>
@@ -55,12 +66,12 @@
         function traer() {
             fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=ars&ids=bitcoin&sparkline=false&locale=es')
                   <!-- Solicitamos info solo de la Crypto correspndiente, en AR$ y en castellano. -->
-                  <!-- Usamos CoinGecko API V3 de https://www.coigecko.com -->
+                  //Usamos CoinGecko API V3 de https://www.coigecko.com -->
                .then(res => res.json())
                .then(data => 
                     {
                     console.log(data)
-                          <!-- Quedan en consola todos los datos obtenidos de la Crypto. -->
+                        // Quedan en consola todos los datos obtenidos de la Crypto. -->
                     console.log(data[0].name)
                     contenido.innerHTML = /*html*/
                       `
